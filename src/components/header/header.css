@@ -1,0 +1,41 @@
+.header{
+    position: fixed;
+    inset: 0  0  auto ;
+}
+
+.nav,.nav-list,.nav-buttons{
+    display: flex;
+}
+
+.nav{
+    background-color: var(--body-color);
+    border-radius: 3rem;
+    max-width: 1436px;
+    padding-inline: 4.5rem ;
+    height: 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 16px hsla(var(--hue),90%,8%);
+}
+
+.nav-list{
+    column-gap: 2.25rem;
+    
+}
+
+.nav-link,.nav-toggle,.nav-close{
+    color: var(--tittle-color);
+}
+
+.nav-link{
+    text-transform: capitalize;
+    color: color 0.3s;
+}
+
+.nav-link:hover{
+    color:var(--first-color);
+}
+.nav-toggle,.nav-close{
+    font-size: 1.5rem;
+    display: none;
+}

@@ -1,0 +1,11 @@
+.section-header{
+    max-width: 600px;
+}
+
+.section.title{
+    font-size:var(--h1-font-size)
+}
+
+.section-description{
+    margin-block: 1rem 3 rem;
+}

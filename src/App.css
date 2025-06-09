@@ -10,6 +10,8 @@
 --body-color:hsl(var(--hue),4%,99%);
 --border-color:hsl(var(--hue),36%,72%);
 --white-color:hsl(var(--hue),4%,100%);
+--hsla:hsla(var(--hue),4%,0%,0.4);
+
     /* ============================================FONT FAMILY========================= */
 --body-font: font-family: 'Zen Old Mincho', serif;
     /* ============================================FONT SIZES========================= */
@@ -93,6 +95,14 @@ img{
     background-color: transparent;
     color: var(--first-color);
 }
+.button-white{
+    border-color:var(--white-color);
+    background-color: var(--white-color) ;
+    color: var(--first-color);
+}
+.button-white:hover{
+    color: var(--white-color);
+}
 
 .section{
     padding-top: 6.5rem;
@@ -102,4 +112,9 @@ img{
     max-width: 1336px;
     margin-inline: auto;
     padding-inline: 1.25rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
 }

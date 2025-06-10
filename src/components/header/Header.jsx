@@ -1,4 +1,4 @@
-import Logo from "../../imgs/logo.svg";
+import Logo from "../../imgs/footer-logo2.svg";
 import { links } from "../../Data";
 import ScrollLink from "../links/ScrollLink";
 import { RiTelegram2Fill ,RiMenu3Fill,RiCloseFill} from "react-icons/ri";

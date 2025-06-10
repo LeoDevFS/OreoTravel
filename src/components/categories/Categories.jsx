@@ -17,7 +17,7 @@ function Categories() {
           decription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laborum facilis mollitia reiciendis explicabo perferendis laudantium, dolores blanditiis accusamus similique illo odit exercitationem neque id. Voluptatem provident cumque dolorem quam."
         />
         <div className="swiper-btns">
-          <button className="swiper-btn prev-btn">
+          <button className="swiper-btn prev-btn"> 
             <RiArrowLeftDoubleFill />
           </button>
 

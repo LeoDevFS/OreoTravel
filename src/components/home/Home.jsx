@@ -1,7 +1,7 @@
 import React from "react";
 import { RiTelegram2Fill} from "react-icons/ri";
 import { PiGlobeHemisphereWestFill } from "react-icons/pi";
-import homeImg from "../../imgs/home-img.png";
+import homeImg from "../../imgs/oreoVacations-png.png";
 import Booking from "./Booking";
 import "./home.css"
 import ScrollLink from "../links/ScrollLink";

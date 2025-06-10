@@ -34,6 +34,7 @@
 
 .home-img{
     justify-self: end;
+    max-height: 600px;
 }
 
 .booking{

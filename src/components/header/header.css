@@ -39,3 +39,8 @@
     font-size: 1.5rem;
     display: none;
 }
+
+.nav-logo-img{
+    max-width: 80px;
+    fill:var(--first-color)
+}

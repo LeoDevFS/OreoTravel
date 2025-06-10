@@ -8,13 +8,17 @@ import "swiper/css/navigation";
 import "./categories.css";
 import { categories } from "../../Data";
 
+
 function Categories() {
   return (
     <section className="categories container section">
       <div className="category-header">
-        <SectionTitle
+        <SectionTitle 
           title="Categories"
-          decription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laborum facilis mollitia reiciendis explicabo perferendis laudantium, dolores blanditiis accusamus similique illo odit exercitationem neque id. Voluptatem provident cumque dolorem quam."
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+           Magnam laborum facilis mollitia reiciendis explicabo perferendis laudantium,
+            dolores blanditiis accusamus similique illo odit exercitationem neque id.
+            Voluptatem provident cumque dolorem quam."
         />
         <div className="swiper-btns">
           <button className="swiper-btn prev-btn"> 

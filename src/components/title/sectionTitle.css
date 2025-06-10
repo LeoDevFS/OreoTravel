@@ -1,11 +1,25 @@
 .section-header{
     max-width: 600px;
+    
 }
 
-.section.title{
+.section-title{
+    
     font-size:var(--h1-font-size)
 }
 
 .section-description{
-    margin-block: 1rem 3 rem;
+    
+    margin-block: 1rem 3rem;
 }
+
+.section-subtitle{
+    color: var(--first-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5gap;
+    margin-bottom: 1rem;
+}
+

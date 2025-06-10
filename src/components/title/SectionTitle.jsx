@@ -1,16 +1,23 @@
-import React from 'react'
-import "./sectionTitle.css"
+import React from "react";
+import "./sectionTitle.css";
+import { PiGlobeHemisphereWestFill } from "react-icons/pi";
 
-function SectionTitle({title,description}) {
+
+function SectionTitle({ title, description, subtitle }) {
   return (
     <div className="section-header">
-        <h2 className="section-title"> Categories
-        </h2>
-            <p className="section-description"> 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ex labore asperiores adipisci consequuntur quia temporibus ipsam quae enim quam?
-            </p>
+      {
+        subtitle&&(
+          <p className="section-subtitle">
+            <PiGlobeHemisphereWestFill/>
+           {subtitle}
+          </p>
+        )
+      }
+      <h2 className="section-title">{title}</h2>
+      <p className="section-description">{description}</p>
     </div>
-  )
+  );
 }
 
-export default SectionTitle
+export default SectionTitle;

@@ -1,0 +1,75 @@
+.tours{
+    padding-bottom: 6.25rem;
+}
+
+.tours-img{
+    width: 100%;
+}
+
+.tour-details{
+    border: 3px solid var(--border-color);
+    border-top:none;
+    padding:1.25rem;
+    border-radius: 0 0 1.25rem 1.25rem;
+    
+}
+
+.star-wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.25rem;
+}
+
+.star{
+    color: var(--border-color);
+}
+.tour-titles,.tour-location{
+text-align:center;
+}
+
+.tour-titles{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--weight-700);
+    margin-block: 0.75rem;
+}
+
+.tour-location{
+    margin-bottom: 0.75rem;
+}
+
+.tour-separator{
+    width: 75%;
+    height: 0;
+    border: 1px solid var(--border-color);
+    opacity: 0.4;
+    margin-inline: auto;
+}
+
+.tour-days{
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: hsl(191, 34%, 41%);
+    margin-block: 1.25rem 0.75rem;
+}
+
+.tour-icon{
+    font-size: var(--normal-font-size);
+}
+
+.tour-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.tour-price{
+    color: var(--first-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-700);
+}
+
+.tour-person{
+    color: var(--title-color);
+}

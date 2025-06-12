@@ -1,1 +1,56 @@
-/* This file is intentionally left blank. */
+.destinations .section-header{
+    text-align: center;
+    margin-inline: auto;
+}
+
+.destinations-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.destinations-item{
+    position: relative;
+}
+
+.destination-details{
+    position: absolute;
+    inset: 0;
+    background-color: var(--hsla);
+    padding-block: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity .3s;
+    opacity: 0;
+}
+
+.destination-details:hover{
+    opacity: 1;
+}
+
+.destination-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.destination-price, .destination-rating{
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-700);
+}
+
+.destination-rating{
+    border-radius: 2rem 0 0 2rem;
+}
+
+.destination-title{
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+}

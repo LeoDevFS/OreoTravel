@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     inset: 0  0  auto ;
+    z-index: 23;
 }
 
 .nav,.nav-list,.nav-buttons{
@@ -20,10 +21,11 @@
 
 .nav-list{
     column-gap: 2.25rem;
-    
 }
 
-.nav-link,.nav-toggle,.nav-close{
+
+
+.nav-link,.nav-toggle,.nav-close,.nav-logo{
     color: var(--tittle-color);
 }
 
@@ -32,7 +34,7 @@
     color: color 0.3s;
 }
 
-.nav-link:hover{
+.nav-link:hover,.active{
     color:var(--first-color);
 }
 .nav-toggle,.nav-close{

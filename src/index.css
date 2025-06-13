@@ -39,7 +39,7 @@
     .nav-buttons .nav-toggle,
     .nav-close,
     .nav-link-button {
-        display: inline-flex;
+        display: inline-flex !important;
     }
 
     .nav-buttons .nav-button {

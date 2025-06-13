@@ -1,16 +1,20 @@
 import Logo from "../../imgs/footer-logo2.svg";
 import { links } from "../../Data";
 import ScrollLink from "../links/ScrollLink";
-import { RiTelegram2Fill ,RiMenu3Fill,RiCloseFill} from "react-icons/ri";
-import {Link}  from 'react-scroll'
+import { RiTelegram2Fill, RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 
 import "./header.css";
+import { useState } from "react";
 
 function Header() {
-  const scrollTop=()=>{
-    animateScroll.scrollToTop()
-  }
+  const [showMenu, setShowMenu] = useState(false);
+
+  const scrollTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <header className="header">
       <nav className="nav container">
@@ -18,17 +22,31 @@ function Header() {
           <img src={Logo} alt="" className="nav-logo-img" />
         </Link>
 
-        <div className="nav-menu">
+        <div className={`${showMenu ? 'show-menu' : ''} nav-menu`}>
           <ul className="nav-list">
             {links.map((link, index) => {
               return (
                 <li className="nav-item" key={index}>
-                  <ScrollLink to={link} name={link} className="nav-link"  extraPops={{spy:false}}/> 
+                  <ScrollLink
+                    to={link}
+                    name={link}
+                    className="nav-link"
+                    extraPops={{ spy: true }}
+                  />
                 </li>
               );
             })}
+            <li className="nav-item">
+              <ScrollLink
+                to="booking"
+                name="Book Now"
+                className="button nav-link-button"
+              >
+                <RiTelegram2Fill className="button-icon" />
+              </ScrollLink>
+            </li>
           </ul>
-          <RiCloseFill className="nav-close" />
+          <RiCloseFill className="nav-close" onClick={() => setShowMenu(!showMenu)}/>
         </div>
 
         <div className="nav-buttons">
@@ -37,10 +55,13 @@ function Header() {
             name="Book Now"
             className="button nav-button"
           >
-            <RiTelegram2Fill className="button-icon" /> 
+            <RiTelegram2Fill className="button-icon" />
           </ScrollLink>
 
-          <RiMenu3Fill className="nav-toggle" />
+          <RiMenu3Fill
+            className="nav-toggle"
+            onClick={() => setShowMenu(!showMenu)}
+          />
         </div>
       </nav>
     </header>

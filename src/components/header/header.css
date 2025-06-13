@@ -34,6 +34,10 @@
     color: color 0.3s;
 }
 
+.nav-link-button{
+    display: none;
+}
+
 .nav-link:hover,.active{
     color:var(--first-color);
 }
